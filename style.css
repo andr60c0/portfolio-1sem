@@ -1,0 +1,64 @@
+/***** GENERELLE INDSTILLINGER START *****/
+img {
+    width: 100%;
+}
+
+h1,
+h2 {
+    font-family: titling-gothic-fb-condensed, sans-serif;
+
+    font-weight: 700;
+
+    font-style: normal;
+
+    font-size: 3rem;
+}
+
+p,
+nav,
+a,
+footer {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    line-height: 1.6;
+}
+
+/***** GENERELLE INDSTILLINGER START *****/
+
+/***** MENUBAR START *****/
+
+.hidden {
+    transform: scale(0);
+}
+
+#menuknap {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    font-size: 3rem;
+    color: white;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+nav {
+    list-style-type: none;
+    transition: transform 1s;
+    transform-origin: top right;
+    position: absolute;
+    background-color: white;
+    min-width: 170px;
+    z-index: 1;
+    right: 1rem;
+    top: 1.9rem;
+}
+
+nav a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    line-height: 3rem;
+}
+
+
+/***** MENUBAR SLUT *****/
