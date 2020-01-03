@@ -4,27 +4,79 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Valgeirsdottir - portfolio</title>
+    <title>Andrea Valgeirsdottir - Portfolio</title>
     <meta name="robots" content="noindex">
+    <link rel="icon" type="image/png" href="pictures/SVG/favikon1.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,700,900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/oqk1btd.css">
     <link rel="stylesheet" href="https://use.typekit.net/awq5rwn.css">
 </head>
 <header>
+    <!-------------MENU----------------->
+    <!---Desktop Menu START---->
+    <div class="siteheader">
 
 
-    <nav>
-        <a href="#portfolio">PORTFOLIO</a>
-        <a href="#om">OM</a>
-        <a href="#kontakt">KONTAKT</a>
-    </nav>
+        <a href="index.html">
+            <!-- <img src="pictures/SVG/logo1.png" alt="logo">--> </a>
 
+
+        <nav>
+            <div class="dropdowndesktop">
+
+                <a href="portfolio.html" class="portfolie"> PORTFOLIO | </a>
+
+                <div class="dropdown-contentdesktop">
+                    <a href="portfolio.html#postmodernisme">- TEMA 1</a>
+                    <a href="portfolio.html#video">- TEMA 2</a>
+                    <a href="portfolio.html#bibliotekaren">- TEMA 3</a>
+                    <a href="portfolio.html#prototype">- TEMA 4</a>
+                </div>
+            </div>
+            <a href="om.html">OM |</a>
+            <a href="kontakt.html">KONTAKT</a>
+        </nav>
+
+    </div>
+    <!---Desktop Menu SLUT ---->
+    <!---Mobil menu START ---->
+
+    <div class="mobilenav">
+
+
+
+        <nav>
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li> <a href="portfolio.html#postmodernisme"> TEMA 1</a></li>
+                <li> <a href="portfolio.html#video"> TEMA 2</a></li>
+                <li> <a href="portfolio.html#bibliotekaren"> TEMA 3</a></li>
+                <li><a href="portfolio.html#prototype"> TEMA 4</a></li>
+                <li> <a href="om.html">OM</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+
+        </nav>
+    </div>
+    <!---Mobil menu SLUT ---->
 </header>
 
 <body>
+    <section id=splash>
+        <picture>
+            <source media="(min-width: 1130px)" srcset="pictures/SVG/splash2.png">
+            <source media="(min-width: 768px)" srcset="pictures/SVG/splash_ipad.png">
+            <source media="(min-width: 460px)" srcset="pictures/SVG/splash_mobile.png">
+            <!--            <source media="(min-width: 300px)" srcset="Billeder/portratforside_mobile">-->
+            <img src="pictures/SVG/splash_mobile.png">
+        </picture>
+    </section>
+
+    <footer> 1.semester Multimedia design - Andrea Valgeirsdóttir</footer>
     <script src="script.js"></script>
 </body>
-<footer> 1.semester Multimedia design - Andrea Valgeirsdóttir</footer>
+
 
 </html>

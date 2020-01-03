@@ -1,29 +1,61 @@
 /***** GENERELLE INDSTILLINGER START *****/
+* {
+    box-sizing: border-box;
+}
+
 img {
     width: 100%;
 }
 
-h1,
+
+header {
+    position: absolute;
+    width: 100%;
+}
+
+body {
+    margin: 0.1px;
+    padding: 0;
+    line-height: 0;
+
+}
+
+h1 {
+    font-family: titling-gothic-fb-condensed, sans-serif;
+    line-height: 1.9rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+
+}
+
 h2 {
     font-family: titling-gothic-fb-condensed, sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
 
-    font-weight: 700;
-
-    font-style: normal;
-
-    font-size: 3rem;
 }
 
-p,
-nav,
-a,
-footer {
+h3 {
+    font-family: titling-gothic-fb-condensed, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+p {
     font-family: 'Lato', sans-serif;
-    color: black;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
-/***** GENERELLE INDSTILLINGER START *****/
+a {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+/***** GENERELLE INDSTILLINGER SLUT *****/
 
 /***** MENUBAR START *****/
 
@@ -36,29 +68,199 @@ footer {
     display: inline-block;
     width: 3rem;
     font-size: 3rem;
+    font-family: 'Lato', sans-serif;
     color: white;
     margin-top: 0.5rem;
     margin-left: 1rem;
+
 }
 
-nav {
+#menu {
     list-style-type: none;
     transition: transform 1s;
     transform-origin: top right;
     position: absolute;
-    background-color: white;
     min-width: 170px;
+    background-color: #c9c9c9;
     z-index: 1;
-    right: 1rem;
-    top: 1.9rem;
+    right: 4rem;
+    top: 2.7rem;
 }
 
-nav a {
-    font-size: 1rem;
+#menu a {
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
     text-decoration: none;
-    color: black;
-    line-height: 3rem;
+    color: white;
+    line-height: 1.6;
+
+}
+
+
+.siteheader {
+    display: none;
+
+}
+
+/*
+.siteheader img {
+    width: 40%;
+    filter: grayscale(100%);
+    margin: 0 0 0 6px;
+}
+*/
+
+
+header img {
+    max-width: 50%;
+    margin-left: 1rem;
+    display: block;
+}
+
+.mobilenav {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+}
+
+header {
+    width: 100%;
+    display: inline;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+/*****MENU BAR TABLET*****/
+
+@media only screen and (min-width:400px) {
+    header img {
+        max-width: 12rem;
+        margin-left: 2rem;
+    }
+
+
+}
+
+/****** MENU BAR DESKTOP ******/
+
+@media only screen and (min-width: 945px) {
+    .mobilenav {
+        display: none;
+    }
+
+    .dropdowndesktop {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdowndesktop .portfolie {
+        font-family: 'Lato', sans-serif;
+        font-size: 22px;
+        color: white;
+        padding-right: 1rem;
+        text-align: right;
+        border: none;
+        outline: none;
+        margin: 0;
+        content: "\u2261";
+        line-height: 1.2rem;
+
+    }
+
+    header .portfolie {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .dropdown-contentdesktop {
+        display: none;
+        position: absolute;
+        min-width: 140px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-contentdesktop a {
+        padding: 7px 10px;
+        font-weight: 400;
+        display: block;
+        text-align: left;
+        color: white;
+    }
+
+    .dropdown-contentdesktop a:hover {
+        background-color: lightgrey;
+    }
+
+    .dropdowndesktop:hover .dropdown-contentdesktop {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+        display: inline;
+        position: fixed;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .siteheader {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 1.2rem;
+        background-size: cover;
+        margin-top: 20px;
+    }
+
+    .siteheader a:hover {
+        color: black;
+    }
+
+    header .portfolie:hover {
+        color: black;
+    }
+
+    /*ingen streg under links*/
+    header nav a {
+        text-decoration: none;
+        padding-right: 1rem;
+    }
+
+    header a {
+        line-height: 1.2rem;
+        font-size: 22px;
+    }
+
+    header img {
+        max-width: 15rem;
+        margin-left: 3rem;
+    }
+
+    .siteheader nav {
+        margin-right: 2.5rem;
+    }
+
+
+
 }
 
 
 /***** MENUBAR SLUT *****/
+
+/***** SPLASH START *****/
+
+
+/***** SPLASH SLUT *****/
