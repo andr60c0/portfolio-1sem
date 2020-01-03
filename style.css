@@ -79,7 +79,7 @@ a {
     width: 3rem;
     font-size: 3rem;
     font-family: 'Lato', sans-serif;
-    color: black;
+    color: white;
     margin-top: 0.5rem;
     margin-left: 1rem;
 
@@ -161,10 +161,12 @@ header {
 /****** PORTFOLIO START *****/
 
 
+/*
 .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
 }
+*/
 
 #portfolio .col {
 
@@ -203,7 +205,7 @@ header {
 
 #portfolio h1 {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 170px;
 }
 
 #portfolio img:hover {
@@ -214,10 +216,241 @@ header {
 
 /****** PORTFOLIO SLUT *****/
 
+/***** WEB START *****/
+
+
+#web .sectionwrapper {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+}
+
+#web .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#web h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#web h2 {
+    text-align: center;
+}
+
+#web img {
+    padding: 10px;
+}
+
+#web p {
+    padding: 15px;
+}
+
+#web .stilartsite_button {
+    width: 18rem;
+    height: 3rem;
+    text-align: center;
+    background-color: #fcf5b0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+
+
+}
+
+#web .stilartdokumentation_button {
+    width: 18rem;
+    height: 3rem;
+    text-align: center;
+    background-color: #fcf5b0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+
+
+
+}
+
+
+
+/***** WEB SLUT *****/
+
+/***** UX START *****/
+#ux .sectionwrapper {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+}
+
+#ux .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#ux h1 {
+    margin-top: 170px;
+    text-align: center;
+}
+
+#ux h2 {
+    text-align: center;
+}
+
+#ux img {
+    padding: 10px;
+}
+
+#ux p {
+    padding: 15px;
+}
+
+#ux .stilartsite_button {
+    width: 18rem;
+    height: 3rem;
+    text-align: center;
+    background-color: #f09595;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+
+
+}
+
+#ux .stilartdokumentation_button {
+    width: 18rem;
+    height: 3rem;
+    text-align: center;
+    background-color: #f09595;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+
+}
+
+/***** UX SLUT *****/
+
+/*****ANIMATION START *****/
+#animation .sectionwrapper {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+}
+
+#animation .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#animation h1 {
+    margin-top: 170px;
+    text-align: center;
+}
+
+#animation h2 {
+    text-align: center;
+}
+
+#animation img {
+    padding: 10px;
+}
+
+#animation p {
+    padding: 15px;
+}
+
+#animation .stilartsite_button {
+    width: 18rem;
+    height: 3rem;
+    text-align: center;
+    background-color: #9dd8c8;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+
+
+}
+
+#animation .stilartdokumentation_button {
+    width: 18rem;
+    height: 3rem;
+    text-align: center;
+    background-color: #9dd8c8;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+
+
+
+}
+
+/*****ANIMATION SLUT *****/
+
+/*****INDHOLD START *****/
+#indhold .sectionwrapper {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+}
+
+#indhold .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#indhold h1 {
+    margin-top: 170px;
+    text-align: center;
+}
+
+#indhold h2 {
+    text-align: center;
+}
+
+#indhold img {
+    padding: 10px;
+}
+
+#indhold p {
+    padding: 15px;
+}
+
+#indhold .stilartsite_button {
+    width: 18rem;
+    height: 3rem;
+    text-align: center;
+    background-color: #36b5b0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+
+
+}
+
+#indhold .stilartdokumentation_button {
+    width: 18rem;
+    height: 3rem;
+    text-align: center;
+    background-color: #36b5b0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+
+
+
+}
+
+/*****INDHOLD SLUT *****/
+
 /***** MEDIA QUERIES START *****/
 
 /***** Media Query Tablet *****/
 
+/*
 @media only screen and (min-width:400px) {
     header img {
         max-width: 12rem;
@@ -226,6 +459,7 @@ header {
 
 
 }
+*/
 
 /****** Media Query Desktop ******/
 
@@ -287,7 +521,7 @@ header {
         font-size: 22px;
     }
 
-/*
+    /*
     header img {
         max-width: 15rem;
         margin-left: 3rem;
@@ -300,9 +534,12 @@ header {
 
 
     /***** MENU BAR DESKTOP SLUT *****/
+    /****** PORTFOLIO DESKTOP START *****/
 
     #portfolio .sectionwrapper {
         padding: 50px 100px 100px 50px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     #portfolio img {
@@ -317,6 +554,25 @@ header {
         width: 40%;
         filter: grayscale(100%);
     }
+
+    /****** PORTFOLIO DESKTOP SLUT *****/
+    /***** WEB DESKTOP START *****/
+
+
+    #web .img {
+        width: 60%;
+    }
+
+    #web .sectionwrapper {
+        padding: 100px 200px 100px 200px;
+    }
+
+    #web h1 {
+        margin-top: 150px;
+    }
+
+    /***** WEB DESKTOP SLUT *****/
+
 
 }
 
