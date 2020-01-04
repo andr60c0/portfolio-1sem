@@ -235,6 +235,16 @@ header {
 /****** PORTFOLIO SLUT *****/
 
 /***** WEB START *****/
+#web .splash_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#web .web_splash {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin-top: 50px;
+}
 
 
 #web .sectionwrapper {
@@ -252,6 +262,15 @@ header {
 #web h1 {
 
     text-align: center;
+}
+
+.arrow_small {
+    width: 15%;
+
+}
+
+.arrow_smaller {
+    width: 8%
 }
 
 #web h2 {
@@ -291,6 +310,19 @@ header {
 
 
 }
+
+#web .center {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margin {
+    margin-top: 60px;
+    margin-left: 8px;
+}
+
 
 
 
@@ -474,6 +506,31 @@ header {
 
 /*****INDHOLD SLUT *****/
 
+/***** EFFEKTER *****/
+
+.beat {
+    animation-name: beat_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes beat_kf {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+
 /***** MEDIA QUERIES START *****/
 
 /***** Media Query Tablet *****/
@@ -588,6 +645,31 @@ header {
     /****** PORTFOLIO DESKTOP SLUT *****/
     /***** WEB DESKTOP START *****/
 
+    .web_splash img {
+        width: 70%;
+        margin-top: 130px;
+        margin-left: 120px;
+        margin-right: 160px;
+    }
+
+    .arrow_small {
+        width: 4%;
+        margin-top: -70px;
+
+    }
+
+    .arrow_smaller {
+        width: 2.3%
+    }
+
+    .margin {
+        margin-top: 90px;
+    }
+
+    .web_splash h2 {
+        padding-top: -40px;
+    }
+
 
     #web .img {
         width: 60%;
@@ -607,6 +689,12 @@ header {
         padding-bottom: 100px;
 
     }
+
+    #web .web_splash {
+
+        margin-top: 0px;
+    }
+
 
 
 
