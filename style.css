@@ -235,12 +235,14 @@ header {
 /****** PORTFOLIO SLUT *****/
 
 /***** WEB START *****/
-#web .splash_container {
+#web .splash_container,
+#ux .splash_container {
     display: flex;
     flex-wrap: wrap;
 }
 
-#web .web_splash {
+#web .web_splash,
+#ux .web_splash {
     flex-grow: 1;
     flex-basis: 300px;
     margin-top: 50px;
@@ -311,7 +313,8 @@ header {
 
 }
 
-#web .center {
+#web .center,
+#ux .center {
 
     display: block;
     margin-left: auto;
