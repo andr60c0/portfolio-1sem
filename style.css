@@ -234,19 +234,39 @@ header {
 
 /****** PORTFOLIO SLUT *****/
 
-/***** WEB START *****/
+/***** TILFÆLLES INDSTILLINGER START *****/
+
+
 #web .splash_container,
-#ux .splash_container {
+#ux .splash_container,
+#animation .splash_container,
+#indhold .splash_container {
     display: flex;
     flex-wrap: wrap;
 }
 
 #web .web_splash,
-#ux .web_splash {
+#ux .web_splash,
+#animation .web_splash,
+#indhold .web_splash {
     flex-grow: 1;
     flex-basis: 300px;
     margin-top: 50px;
 }
+
+#web .center,
+#ux .center,
+#animation .center,
+#indhold .center {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/***** TILFÆLLES INDSTILLINGER SLUT *****/
+
+/***** WEB START *****/
 
 
 #web .sectionwrapper {
@@ -313,13 +333,7 @@ header {
 
 }
 
-#web .center,
-#ux .center {
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .margin {
     margin-top: 60px;
@@ -443,9 +457,28 @@ header {
     font-weight: 700;
     color: white;
 
+}
 
+.blueman_container {
+    width: 31vw;
+    height: 54vw;
+    background-image: url(pictures/SVG/kartoffel2_1.svg);
+    background-size: cover;
+    position: absolute;
 
 }
+
+
+.position1 {
+    top: 55%;
+    left: 34%;
+}
+
+#animation .arrow_small {
+    margin-top: 190px;
+    margin-left:
+}
+
 
 /*****ANIMATION SLUT *****/
 
@@ -646,7 +679,18 @@ header {
     }
 
     /****** PORTFOLIO DESKTOP SLUT *****/
-    /***** WEB DESKTOP START *****/
+
+    /***** DESKTOP TILFÆLLES INDSTILLINGER *****/
+    #web h1,
+    #ux h1,
+    #indhold h1 {
+        margin-top: 150px;
+        font-size: 10rem;
+        padding-bottom: 100px;
+
+    }
+
+
 
     .web_splash img {
         width: 70%;
@@ -655,7 +699,8 @@ header {
         margin-right: 160px;
     }
 
-    .arrow_small {
+    #web .arrow_small,
+    #ux .arrow_small {
         width: 4%;
         margin-top: -70px;
 
@@ -674,34 +719,84 @@ header {
     }
 
 
-    #web .img {
-        width: 60%;
-    }
-
     .sectionwrapper {
         padding: 100px;
     }
 
 
-    #web h1,
-    #ux h1,
-    #animation h1,
-    #indhold h1 {
-        margin-top: 150px;
-        font-size: 10rem;
-        padding-bottom: 100px;
-
-    }
+    /***** WEB DESKTOP START *****/
 
     #web .web_splash {
 
         margin-top: 0px;
     }
 
+    #web .img {
+        width: 60%;
+    }
 
 
 
     /***** WEB DESKTOP SLUT *****/
+
+    /***** UX DESKTOP START *****/
+    /***** UX DESKTOP SLUT *****/
+
+
+    /***** ANIMATION DESKTOP START *****/
+    #animation h1 {
+        font-size: 8rem;
+        margin-left: 90px;
+    }
+
+    #animation .arrow_small {
+        width: 4%;
+        margin-top: 30px;
+
+    }
+
+    .blueman_container {
+        width: 10vw;
+        height: 18vw;
+        background-image: url(pictures/SVG/kartoffel2_1.svg);
+        background-size: cover;
+        position: absolute;
+    }
+
+    .position0 {
+        top: -16vw;
+        right: 0vw;
+    }
+
+    .moveBlueman {
+        animation-name: moveBlueman_kf;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes moveBlueman_kf {
+        0% {
+            transform: translate(0);
+
+        }
+
+        100% {
+            transform: translate(500px, 470px);
+        }
+
+
+    }
+
+
+
+    /***** ANIMATION DESKTOP SLUT *****/
+
+    /***** INDHOLD DESKTOP START *****/
+    /***** INDHOLD DESKTOP SLUT *****/
+
+
 
 
 }
