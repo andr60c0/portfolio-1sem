@@ -23,12 +23,14 @@ body {
 }
 
 h1 {
-    /*    font-family: titling-gothic-fb-condensed,
-sans-serif;*/
+    /*
+    font-family: titling-gothic-fb-condensed,
+        sans-serif;
+*/
     font-family: 'Raleway', sans-serif;
 
     line-height: 1.9rem;
-    font-size: 3rem;
+    font-size: 4rem;
     text-transform: uppercase;
     color: black;
     font-weight: 300;
@@ -52,16 +54,20 @@ h3 {
 }
 
 p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
 }
 
 a {
-    font-family: 'Raleway', sans-serif;
+
+    font-family: titling-gothic-fb-condensed, sans-serif;
+    /*    font-family: 'Raleway',
+sans-serif;*/
     font-size: 1rem;
     text-decoration: none;
     color: white;
+    font-weight: 200;
 }
 
 
@@ -78,7 +84,10 @@ a {
     display: inline-block;
     width: 3rem;
     font-size: 3rem;
-    font-family: 'Lato', sans-serif;
+    font-family: titling-gothic-fb-condensed, sans-serif;
+
+    /*    font-family: 'Raleway',
+sans-serif;*/
     color: white;
     margin-top: 0.5rem;
     margin-left: 1rem;
@@ -189,15 +198,19 @@ header {
     pointer-events: none;
 }
 
+#portfolio .centered h2:hover {
+    color: white;
+}
+
 #portfolio .colorboxtext {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: titling-gothic-fb-condensed, sans-serif;
-    font-size: 2.3rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 100;
     letter-spacing: 7px;
     pointer-events: none;
 
@@ -206,6 +219,11 @@ header {
 #portfolio h1 {
     text-align: center;
     margin-top: 170px;
+}
+
+#portfolio h2 {
+    font-weight: 370;
+    font-size: 1.3rem;
 }
 
 #portfolio img:hover {
@@ -232,11 +250,12 @@ header {
 }
 
 #web h1 {
-    margin-top: 100px;
+
     text-align: center;
 }
 
 #web h2 {
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -252,7 +271,7 @@ header {
     width: 18rem;
     height: 3rem;
     text-align: center;
-    background-color: #fcf5b0;
+    background-color: #F67280;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
@@ -264,7 +283,7 @@ header {
     width: 18rem;
     height: 3rem;
     text-align: center;
-    background-color: #fcf5b0;
+    background-color: #F67280;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
@@ -291,11 +310,14 @@ header {
 }
 
 #ux h1 {
-    margin-top: 170px;
     text-align: center;
+
+
 }
 
 #ux h2 {
+    margin-top: 150px;
+
     text-align: center;
 }
 
@@ -311,7 +333,7 @@ header {
     width: 18rem;
     height: 3rem;
     text-align: center;
-    background-color: #f09595;
+    background-color: #C06C84;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
@@ -323,7 +345,7 @@ header {
     width: 18rem;
     height: 3rem;
     text-align: center;
-    background-color: #f09595;
+    background-color: #C06C84;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
@@ -346,11 +368,14 @@ header {
 }
 
 #animation h1 {
-    margin-top: 170px;
+
     text-align: center;
+
+
 }
 
 #animation h2 {
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -366,7 +391,7 @@ header {
     width: 18rem;
     height: 3rem;
     text-align: center;
-    background-color: #9dd8c8;
+    background-color: #6C5B7B;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
@@ -378,7 +403,7 @@ header {
     width: 18rem;
     height: 3rem;
     text-align: center;
-    background-color: #9dd8c8;
+    background-color: #6C5B7B;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
@@ -403,11 +428,14 @@ header {
 }
 
 #indhold h1 {
-    margin-top: 170px;
+
     text-align: center;
+
+
 }
 
 #indhold h2 {
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -423,7 +451,7 @@ header {
     width: 18rem;
     height: 3rem;
     text-align: center;
-    background-color: #36b5b0;
+    background-color: #35477D;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
@@ -435,7 +463,7 @@ header {
     width: 18rem;
     height: 3rem;
     text-align: center;
-    background-color: #36b5b0;
+    background-color: #35477D;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
@@ -537,7 +565,7 @@ header {
     /****** PORTFOLIO DESKTOP START *****/
 
     #portfolio .sectionwrapper {
-        padding: 50px 100px 100px 50px;
+        padding: 0px 100px 100px 50px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -553,6 +581,8 @@ header {
     .logo {
         width: 40%;
         filter: grayscale(100%);
+        margin-left: 70px;
+        margin-bottom: 20px;
     }
 
     /****** PORTFOLIO DESKTOP SLUT *****/
@@ -563,13 +593,22 @@ header {
         width: 60%;
     }
 
-    #web .sectionwrapper {
-        padding: 100px 200px 100px 200px;
+    .sectionwrapper {
+        padding: 100px;
     }
 
-    #web h1 {
+
+    #web h1,
+    #ux h1,
+    #animation h1,
+    #indhold h1 {
         margin-top: 150px;
+        font-size: 10rem;
+        padding-bottom: 100px;
+
     }
+
+
 
     /***** WEB DESKTOP SLUT *****/
 
