@@ -122,7 +122,7 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 3rem;
-    background-color: black;
+
 }
 
 header {
@@ -133,6 +133,7 @@ header {
     z-index: 2;
     display: flex;
     flex-direction: column;
+    background-color: black;
 
 }
 
@@ -168,7 +169,7 @@ footer .col img {
     height: 30px;
     width: 30px;
     padding: 4px 6px 10px 0;
-    margin 10px;
+    margin: 10px;
 
 }
 
@@ -266,10 +267,7 @@ footer a {
     transform: scale(1.2);
 }
 
-#portfolio h1:hover {
-    font-size: 2.1rem;
 
-}
 
 
 /****** PORTFOLIO SLUT *****/
@@ -304,6 +302,66 @@ footer a {
     margin-right: auto;
 }
 
+/**** BUTTONS *****/
+.button a {
+    width: 10rem;
+    height: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    /*
+    margin-top: 20px;
+    margin-right: 30px;
+*/
+    /*    padding: 22px;*/
+    transition-duration: 0.4s;
+
+
+
+}
+
+.button a:hover {
+    background-color: black;
+}
+
+#web .button a {
+
+    background-color: #F67280;
+
+
+}
+
+#ux .button a {
+
+    background-color: #C06C84;
+
+}
+
+
+#indhold .button a {
+
+    background-color: #35477D;
+
+
+}
+
+
+#animation .button a {
+
+    background-color: #6C5B7B;
+
+
+}
+
+
+
+
+/***** BUTTONS SLUT ****/
+
 /***** TILFÆLLES INDSTILLINGER SLUT *****/
 
 /***** WEB START *****/
@@ -317,8 +375,11 @@ footer a {
 }
 
 #web .col {
+    display: flex;
+    flex-wrap: wrap;
     flex-grow: 1;
     flex-basis: 300px;
+
 }
 
 #web h1 {
@@ -352,30 +413,7 @@ footer a {
     padding: 15px;
 }
 
-#web .stilartsite_button {
-    width: 18rem;
-    height: 3rem;
-    text-align: center;
-    background-color: #F67280;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
 
-
-}
-
-#web .stilartdokumentation_button {
-    width: 18rem;
-    height: 3rem;
-    text-align: center;
-    background-color: #F67280;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
-
-
-
-}
 
 
 
@@ -422,28 +460,8 @@ footer a {
     padding: 15px;
 }
 
-#ux .stilartsite_button {
-    width: 18rem;
-    height: 3rem;
-    text-align: center;
-    background-color: #C06C84;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
 
 
-}
-
-#ux .stilartdokumentation_button {
-    width: 18rem;
-    height: 3rem;
-    text-align: center;
-    background-color: #C06C84;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
-
-}
 
 /***** UX SLUT *****/
 
@@ -480,28 +498,9 @@ footer a {
     padding: 15px;
 }
 
-#animation .stilartsite_button {
-    width: 18rem;
-    height: 3rem;
-    text-align: center;
-    background-color: #6C5B7B;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
 
 
-}
 
-#animation .stilartdokumentation_button {
-    width: 18rem;
-    height: 3rem;
-    text-align: center;
-    background-color: #6C5B7B;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
-
-}
 
 .blueman_container {
     width: 31vw;
@@ -569,30 +568,8 @@ footer a {
     padding: 15px;
 }
 
-#indhold .stilartsite_button {
-    width: 18rem;
-    height: 3rem;
-    text-align: center;
-    background-color: #35477D;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
 
 
-}
-
-#indhold .stilartdokumentation_button {
-    width: 18rem;
-    height: 3rem;
-    text-align: center;
-    background-color: #35477D;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
-
-
-
-}
 
 #indhold .splash_container {
     justify-content: center;
@@ -882,6 +859,19 @@ footer a {
         padding: 100px;
     }
 
+    /**** BUTTONS *****/
+    .button a {
+        width: 10rem;
+        height: 1rem;
+
+        font-size: 2rem;
+        font-weight: 300;
+        padding: 20px;
+        margin-left: 10px;
+
+    }
+
+
 
     /***** WEB DESKTOP START *****/
 
@@ -967,7 +957,7 @@ footer a {
         }
 
         100% {
-            transform: translate(500px, 390px);
+            transform: translate(440px, 450px);
         }
 
 
