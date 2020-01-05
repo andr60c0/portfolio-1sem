@@ -8,13 +8,6 @@ img {
 }
 
 
-/*
-header {
-    position: absolute;
-    width: 100%;
-}
-*/
-
 body {
     margin: 0.1px;
     padding: 0;
@@ -23,12 +16,8 @@ body {
 }
 
 h1 {
-    /*
-    font-family: titling-gothic-fb-condensed,
-        sans-serif;
-*/
-    font-family: 'Raleway', sans-serif;
 
+    font-family: 'Raleway', sans-serif;
     line-height: 1.9rem;
     font-size: 4rem;
     text-transform: uppercase;
@@ -62,8 +51,6 @@ p {
 a {
 
     font-family: titling-gothic-fb-condensed, sans-serif;
-    /*    font-family: 'Raleway',
-sans-serif;*/
     font-size: 1rem;
     text-decoration: none;
     color: white;
@@ -121,21 +108,7 @@ sans-serif;*/
 
 }
 
-/*
-.siteheader img {
-    width: 40%;
-    filter: grayscale(100%);
-    margin: 0 0 0 6px;
-}
-*/
 
-
-/*
-header img {
-    max-width: 50%;
-    margin-left: 1rem;
-    display: block;
-}*/
 
 .mobilenav {
     width: 100%;
@@ -170,12 +143,7 @@ header {
 /****** PORTFOLIO START *****/
 
 
-/*
-.sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-*/
+
 
 #portfolio .col {
 
@@ -289,6 +257,10 @@ header {
 .arrow_small {
     width: 15%;
 
+}
+
+#web .arrow_small {
+    margin-top: 30px;
 }
 
 .arrow_smaller {
@@ -465,8 +437,11 @@ header {
     background-image: url(pictures/SVG/kartoffel2_1.svg);
     background-size: cover;
     position: absolute;
+    margin-top: 50px;
 
 }
+
+
 
 
 .position1 {
@@ -474,9 +449,16 @@ header {
     left: 34%;
 }
 
+
+
+#indhold .arrow_small,
+#ux .arrow_small {
+    margin-top: 40px;
+
+}
+
 #animation .arrow_small {
-    margin-top: 190px;
-    margin-left:
+    margin-top: 245px;
 }
 
 
@@ -540,6 +522,59 @@ header {
 
 }
 
+#indhold .splash_container {
+    justify-content: center;
+
+}
+
+
+#indhold .hide {
+    display: none;
+}
+
+#indhold .pic1_slide,
+#indhold .pic2_slide,
+#indhold .pic3_slide,
+#indhold .pic4_slide,
+#indhold .pic5_slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 270px;
+    width: 400px;
+
+}
+
+#indhold .pic1_slide {
+    background-image: url(pictures/SVG/pic1.svg);
+
+}
+
+#indhold .pic2_slide {
+    background-image: url(pictures/SVG/pic2.svg);
+
+}
+
+#indhold .pic3_slide {
+    background-image: url(pictures/SVG/pic3.svg);
+
+}
+
+#indhold .pic4_slide {
+    background-image: url(pictures/SVG/pic4.svg);
+
+}
+
+#indhold .pic5_slide {
+    background-image: url(pictures/SVG/pic5.svg);
+
+}
+
+#indhold .right {
+    margin-left: 0px;
+}
+
+
+
 /*****INDHOLD SLUT *****/
 
 /***** EFFEKTER *****/
@@ -553,15 +588,15 @@ header {
 
 @keyframes beat_kf {
     0% {
-        transform: scale(1)
+        transform: translateY(0);
     }
 
     50% {
-        transform: scale(1.1);
+        transform: translateY(5px);
     }
 
     100% {
-        transform: scale(1);
+        transform: translateY(0);
 
     }
 }
@@ -569,18 +604,7 @@ header {
 
 /***** MEDIA QUERIES START *****/
 
-/***** Media Query Tablet *****/
 
-/*
-@media only screen and (min-width:400px) {
-    header img {
-        max-width: 12rem;
-        margin-left: 2rem;
-    }
-
-
-}
-*/
 
 /****** Media Query Desktop ******/
 
@@ -591,13 +615,6 @@ header {
         display: none;
     }
 
-    /*
-    header .portfolie {
-        margin: 0;
-        padding: 0;
-
-    }
-*/
 
 
     header {
@@ -642,12 +659,6 @@ header {
         font-size: 22px;
     }
 
-    /*
-    header img {
-        max-width: 15rem;
-        margin-left: 3rem;
-    }
-*/
 
     .siteheader nav {
         margin-right: 2.5rem;
@@ -681,13 +692,17 @@ header {
     /****** PORTFOLIO DESKTOP SLUT *****/
 
     /***** DESKTOP TILFÆLLES INDSTILLINGER *****/
-    #web h1,
-    #ux h1,
-    #indhold h1 {
+    #web h1 {
         margin-top: 150px;
         font-size: 10rem;
         padding-bottom: 100px;
 
+    }
+
+    #ux h1 {
+        margin-top: 130px;
+        font-size: 10rem;
+        padding-bottom: 100px;
     }
 
 
@@ -740,20 +755,29 @@ header {
     /***** WEB DESKTOP SLUT *****/
 
     /***** UX DESKTOP START *****/
+    #ux h2 {
+        margin-top: 120px;
+    }
+
+    #ux img {
+        margin-top: 50px;
+    }
+
     /***** UX DESKTOP SLUT *****/
 
 
     /***** ANIMATION DESKTOP START *****/
     #animation h1 {
-        font-size: 8rem;
+        font-size: 5rem;
         margin-left: 90px;
     }
 
     #animation .arrow_small {
         width: 4%;
-        margin-top: 30px;
+        margin-top: 90px;
 
     }
+
 
     .blueman_container {
         width: 10vw;
@@ -770,7 +794,7 @@ header {
 
     .moveBlueman {
         animation-name: moveBlueman_kf;
-        animation-duration: 4s;
+        animation-duration: 2s;
         animation-iteration-count: 1;
         animation-fill-mode: both;
         animation-timing-function: ease-in-out;
@@ -791,9 +815,144 @@ header {
 
 
 
+
+    .word span {
+        cursor: pointer;
+        display: inline-block;
+        user-select: none;
+        line-height: .8;
+    }
+
+    .toplong {
+        animation: toplong 1.5s linear;
+    }
+
+    @keyframes toplong {
+
+        10%,
+        40% {
+            transform: translateY(-48vh) scaleY(1);
+        }
+
+        90% {
+            transform: translateY(-48vh) scaleY(4);
+        }
+    }
+
+
+    .falling {
+        animation: falling 5s ease-out;
+        transform-origin: bottom center;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes falling {
+        12% {
+            transform: rotateX(240deg);
+        }
+
+        24% {
+            transform: rotateX(150deg);
+        }
+
+        36% {
+            transform: rotateX(200deg);
+        }
+
+        48% {
+            transform: rotateX(175deg);
+        }
+
+        60%,
+        85% {
+            transform: rotateX(180deg);
+        }
+
+        100% {
+            transform: rotateX(180deg);
+        }
+    }
+
+    .delay1 {
+        animation-delay: .3s;
+    }
+
+    .delay2 {
+        animation-delay: .6s;
+    }
+
+    .delay3 {
+        animation-delay: .9s;
+
+    }
+
+    .delay4 {
+        animation-delay: 1.2s;
+    }
+
+    .delay5 {
+        animation-delay: 1.5s;
+    }
+
+    .delay6 {
+        animation-delay: 1.8s;
+    }
+
+    .delay7 {
+        animation-delay: 2.1s;
+    }
+
+    .delay8 {
+        animation-delay: 2.4s;
+    }
+
+    .delay9 {
+        animation-delay: 2.7s;
+    }
+
+    .delay10 {
+        animation-delay: 3s;
+    }
+
+
+
+
+
+
     /***** ANIMATION DESKTOP SLUT *****/
 
     /***** INDHOLD DESKTOP START *****/
+    #indhold h1 {
+        font-size: 7rem;
+
+    }
+
+    #indhold .arrow_small {
+        width: 4%;
+        margin-top: 70px;
+
+    }
+
+    #indhold .pic1_slide,
+    #indhold .pic2_slide,
+    #indhold .pic3_slide,
+    #indhold .pic4_slide,
+    #indhold .pic5_slide {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 52vh;
+        width: 36vw;
+
+    }
+
+
+
+    #indhold .right {
+        margin-left: 100px;
+    }
+
+
+
     /***** INDHOLD DESKTOP SLUT *****/
 
 
