@@ -73,13 +73,11 @@ a {
     display: inline-block;
     width: 3rem;
     font-size: 3rem;
-    font-family: titling-gothic-fb-condensed, sans-serif;
-
-    /*    font-family: 'Raleway',
-sans-serif;*/
+    font-family: 'Raleway', sans-serif;
     color: white;
     margin-top: 0.5rem;
     margin-left: 1rem;
+
 
 }
 
@@ -89,19 +87,23 @@ sans-serif;*/
     transform-origin: top right;
     position: absolute;
     min-width: 170px;
-    background-color: #c9c9c9;
+    background-color: #000000;
     z-index: 1;
-    right: 4rem;
+    right: 2rem;
     top: 2.7rem;
 }
 
 #menu a {
-    font-family: 'Lato', sans-serif;
-    font-size: 3rem;
+    font-family: titling-gothic-fb-condensed, sans-serif;
+    font-size: 2rem;
     text-decoration: none;
-    color: black;
+    color: white;
     line-height: 1.6;
 
+}
+
+.logo {
+    margin-left: 20px;
 }
 
 
@@ -120,6 +122,7 @@ sans-serif;*/
     justify-content: space-between;
     align-items: center;
     height: 3rem;
+    background-color: black;
 }
 
 header {
@@ -130,8 +133,7 @@ header {
     z-index: 2;
     display: flex;
     flex-direction: column;
-    background-color: black;
-    padding-right: 80px;
+
 }
 
 /***** FOOTER START *****/
@@ -262,6 +264,11 @@ footer a {
 #portfolio img:hover {
     transition: .5s ease;
     transform: scale(1.2);
+}
+
+#portfolio h1:hover {
+    font-size: 2.1rem;
+
 }
 
 
@@ -725,9 +732,11 @@ footer a {
     }
 
 
+    /*
     .siteheader nav {
         margin-right: 2.5rem;
     }
+*/
 
 
     /***** MENU BAR DESKTOP SLUT *****/
@@ -939,7 +948,7 @@ footer a {
     }
 
     .position0 {
-        top: -16vw;
+        top: -18vw;
         right: 0vw;
     }
 
@@ -958,7 +967,7 @@ footer a {
         }
 
         100% {
-            transform: translate(500px, 370px);
+            transform: translate(500px, 390px);
         }
 
 
