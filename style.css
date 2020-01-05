@@ -23,6 +23,7 @@ h1 {
     text-transform: uppercase;
     color: black;
     font-weight: 300;
+    user-select: none;
 
 }
 
@@ -31,6 +32,7 @@ h2 {
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 100;
+    user-select: none;
 
 
 }
@@ -132,6 +134,67 @@ header {
     padding-right: 80px;
 }
 
+/***** FOOTER START *****/
+footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100vw;
+    height: 100%;
+    background-color: #000000;
+    color: white;
+}
+
+footer .sectionwrapper {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    justify-content: space-around;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+footer .sectionwrapper .col {
+    padding: 0;
+    /*    padding: 0 40px;*/
+}
+
+
+footer .col img {
+    height: 30px;
+    width: 30px;
+    padding: 4px 6px 10px 0;
+    margin 10px;
+
+}
+
+
+footer p,
+footer a,
+footer h2 {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a {
+    font-family: 'Raleway', sans-serif;
+}
+
+footer h2 {
+    font-size: .8rem;
+}
+
+footer p,
+footer a {
+    font-size: 0.75rem;
+}
+
+
+
+/***** FOOTER SLUT ****/
 
 
 
@@ -139,6 +202,8 @@ header {
 
 
 /***** SPLASH SLUT *****/
+
+
 
 /****** PORTFOLIO START *****/
 
@@ -190,7 +255,7 @@ header {
 }
 
 #portfolio h2 {
-    font-weight: 370;
+    font-weight: 300;
     font-size: 1.3rem;
 }
 
@@ -337,7 +402,7 @@ header {
 }
 
 #ux h2 {
-    margin-top: 150px;
+    margin-top: 50px;
 
     text-align: center;
 }
@@ -485,7 +550,7 @@ header {
 }
 
 #indhold h2 {
-    margin-top: 150px;
+    margin-top: 120px;
     text-align: center;
 }
 
@@ -683,10 +748,71 @@ header {
     }
 
     .logo {
-        width: 40%;
-        filter: grayscale(100%);
-        margin-left: 70px;
+        margin-left: 90px;
         margin-bottom: 20px;
+
+    }
+
+
+    .font_weight {
+        font-weight: 100;
+    }
+
+    .rotate_logo {
+        animation-name: rotate_logo_kf;
+        animation-iteration-count: infinite;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+
+    }
+
+    @keyframes rotate_logo_kf {
+        0% {
+            transform: rotateX(0) translateX(-2.5px);
+
+
+        }
+
+        50% {
+            transform: rotateX(3.142rad) translateX(2.5px);
+
+
+        }
+
+        100% {
+            transform: rotateX(0) translateX(-2.5px);
+
+
+        }
+
+    }
+
+    .move_logo {
+        animation-name: move_logo_kf;
+        animation-iteration-count: infinite;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+    }
+
+    @keyframes move_logo_kf {
+        0% {
+
+            transform: translateX(-0.5px);
+
+        }
+
+        50% {
+
+            transform: translateX(.5px);
+
+        }
+
+        100% {
+
+            transform: translateX(-0.5px);
+
+        }
+
     }
 
     /****** PORTFOLIO DESKTOP SLUT *****/
@@ -707,11 +833,20 @@ header {
 
 
 
-    .web_splash img {
+    #web .web_splash img,
+    #animation .web_splash img {
         width: 70%;
         margin-top: 130px;
         margin-left: 120px;
         margin-right: 160px;
+    }
+
+    #indhold .web_splash img {
+        width: 70%;
+        margin-top: 130px;
+        /*        margin-left: 120px;*/
+        /*        margin-right: 120px;*/
+
     }
 
     #web .arrow_small,
@@ -760,8 +895,20 @@ header {
     }
 
     #ux img {
-        margin-top: 50px;
+        margin-top: 0px;
+
+
     }
+
+    #ux .web_splash img {
+        width: 70%;
+        margin-bottom: 30px;
+        margin-left: 120px;
+        margin-right: 160px;
+
+    }
+
+
 
     /***** UX DESKTOP SLUT *****/
 
@@ -778,10 +925,14 @@ header {
 
     }
 
+    #animation .web_splash {
+        padding-left: 0px;
+    }
+
 
     .blueman_container {
-        width: 10vw;
-        height: 18vw;
+        width: 11vw;
+        height: 19vw;
         background-image: url(pictures/SVG/kartoffel2_1.svg);
         background-size: cover;
         position: absolute;
@@ -797,7 +948,7 @@ header {
         animation-duration: 2s;
         animation-iteration-count: 1;
         animation-fill-mode: both;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: linear
     }
 
     @keyframes moveBlueman_kf {
@@ -807,7 +958,7 @@ header {
         }
 
         100% {
-            transform: translate(500px, 470px);
+            transform: translate(500px, 370px);
         }
 
 
@@ -927,6 +1078,10 @@ header {
 
     }
 
+    #indhold h2 {
+        margin-top: 130px;
+    }
+
     #indhold .arrow_small {
         width: 4%;
         margin-top: 70px;
@@ -948,8 +1103,14 @@ header {
 
 
     #indhold .right {
-        margin-left: 100px;
+        margin-left: 200px;
     }
+
+    #indhold .left {
+        margin-left: 50px;
+
+    }
+
 
 
 
