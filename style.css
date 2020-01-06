@@ -383,8 +383,12 @@ footer a {
 #web .sectionwrapper {
     margin: 40px;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 
+}
+
+.ipad img {
+    width: 50%;
 }
 
 #web .col {
@@ -447,9 +451,26 @@ footer a {
 
 }
 
-#ux .col {
+#web .col_right,
+#ux .col_right {
+    display: flex;
+    flex-wrap: wrap;
     flex-grow: 1;
     flex-basis: 300px;
+}
+
+
+#web .col_left,
+#ux .col_left {
+
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#web .col_pic,
+#ux .col_pic {
+    flex-grow: 1;
+    flex-basis: 200px;
 }
 
 #ux h1 {
@@ -923,7 +944,7 @@ footer a {
 
 
     .sectionwrapper {
-        padding: 100px;
+        padding: 20px 100px 20px 100px;
     }
 
     /**** BUTTONS *****/
@@ -981,6 +1002,8 @@ footer a {
         margin-right: 160px;
 
     }
+
+
 
 
 
